@@ -14,9 +14,11 @@ public class Main {
         House h = new House(
                 "Suburban Family Home",
                 "2025-08-12",
+                1250000,
                 "123 Smith St, NJ",
                 1,
-                2400
+                2400,
+                8500
         );
 
         House h2 = new House(
@@ -63,11 +65,10 @@ public class Main {
              msg = String.format("Vehicle: %s Year: %s - Value of vehicle after depreciation: $%.2f", car.getMakeModel(), car.getYear(), car.getValue());
              networth += car.getValue();
             }
-            System.out.println(msg);
-
+            System.out.printf("%s\n", msg);
         }
 
-        System.out.printf("Your total networth is $%.2f", networth);
+        System.out.printf("Your total networth is $%,.2f", networth);
 
 
 

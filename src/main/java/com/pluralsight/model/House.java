@@ -9,8 +9,8 @@ public class House extends Asset{
     double valuePerLotSize = 0.25;
     double actualValue;
 
-    public House(String address, int condition, int squareFoot, int lotSize) {
-        super();
+    public House(String description, String dateAccquired, double originalCost, String address, int condition, int squareFoot, int lotSize) {
+        super(description, dateAccquired, originalCost);
         this.address = address;
         this.condition = condition;
         this.squareFoot = squareFoot;
